@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: es
+
+datasource:
+  username: teste3
+  password: teste2
+  url: teste1
+
+jms:
+  username: leco
+  password: leleco
+  url: jms://leleco-teste

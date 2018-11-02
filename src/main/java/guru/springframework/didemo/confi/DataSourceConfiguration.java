@@ -9,10 +9,10 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
 @Configuration
-@PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jms.properties")
-})
+//@PropertySources({
+//        @PropertySource("classpath:datasource.yml"),
+//        @PropertySource("classpath:jms.yml")
+//})
 public class DataSourceConfiguration {
 
     @Value("${datasource.username}")

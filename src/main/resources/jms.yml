@@ -1,0 +1,4 @@
+jms:
+  username: leco
+  password: leleco
+  url: jms://leleco-teste
