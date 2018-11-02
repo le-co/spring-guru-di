@@ -3,6 +3,8 @@ package guru.springframework.didemo;
 import guru.springframework.didemo.controllers.ConstructorController;
 import guru.springframework.didemo.controllers.MyController;
 import guru.springframework.didemo.controllers.SetterController;
+import guru.springframework.didemo.examplebean.DataSourceFactory;
+import guru.springframework.didemo.examplebean.JmsFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -19,5 +21,7 @@ public class DiDemoApplication {
         System.out.println(ctx.getBean(ConstructorController.class).sayHello());
         System.out.println(ctx.getBean(SetterController.class).sayHello());
 
+        System.out.println(ctx.getBean(DataSourceFactory.class));
+        System.out.println(ctx.getBean(JmsFactory.class));
     }
 }
